@@ -1,14 +1,4 @@
 <# 
-.ABOUT
-This PowerShell script was developed to gather system information from Windows systems to support BSW's audit requests. 
-Information is collected and exported to be analyzed using these tools (e.g. Power BI).
-
-All PowerShell commands used are read-only and do not make changes to the Operating System or Active Directory.
-Please see Ref1.csv for the list of commands and justifications.
-
-After successful execution of the script, a "C:\ADA" directory will be created with 2 files in the ADA directory.
-There will also be another subdirectory with the hostname.
-Please deliver only the .zip  and .md5 files to your ADA Auditors. You can then safely delete any output files in "C:\ADA".
 
 .PREREQUISITES
 
@@ -46,8 +36,8 @@ This example shows how to set the execution policy for the local computer.
 
  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
  
-This example shows how to run BSW script from local directory. 
- PS C:\"local directory"> .\BSW_System_Query_Script.ps1
+This example shows how to run script from local directory. 
+ PS C:\"local directory"> .\ADAudit.ps1
 #>
 
 #Begin Transcript
